@@ -1,0 +1,37 @@
+# ---- Build output -----------------------------------------------------------
+# Both programs are compiled from source by `make`, so they never belong in
+# version control.
+tracker/tracker
+client/client
+
+*.o
+*.d
+*.a
+build/
+
+# Debug symbol bundles produced by clang on macOS.
+*.dSYM/
+
+# ---- Local test harness and run artefacts -----------------------------------
+tests/
+*.log
+
+# Sample payloads and download targets created by the execution.md walkthrough.
+demo/
+out_bob/
+out_carol/
+
+# ---- Local notes ------------------------------------------------------------
+# Long-form design and study notes. Useful while working, not part of what the
+# project delivers.
+docs/
+
+# ---- Editor and OS clutter --------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+compile_commands.json
+compile_flags.txt
+.cache/
+.DS_Store

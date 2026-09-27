@@ -1,0 +1,15 @@
+# Tracker addresses, then the key the two trackers use to authenticate each
+# other before they will exchange any replication traffic.
+#
+# The secret below is an all-zeros PLACEHOLDER. Generate a real one before
+# running this anywhere that matters -- anyone who can read this key can inject
+# operations into both trackers:
+#
+#   printf '127.0.0.1:9000\n127.0.0.1:9001\nsecret=%s\n' \
+#       "$(head -c 32 /dev/urandom | xxd -p | tr -d '\n')" > tracker_info.txt
+#   chmod 600 tracker_info.txt
+#
+# See execution.md step 3a.
+127.0.0.1:9000
+127.0.0.1:9001
+secret=0000000000000000000000000000000000000000000000000000000000000000
